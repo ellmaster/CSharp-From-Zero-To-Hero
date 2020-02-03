@@ -38,7 +38,12 @@ namespace BootCamp.Chapter
         /// </summary>
         public static string Build(string message, int padding)
         {
-            return "";
+            if (string.IsNullOrEmpty(message))
+            {
+                return "";
+            }
+
+            return message;
         }
     }
 }
